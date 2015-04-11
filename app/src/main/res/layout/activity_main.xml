@@ -8,7 +8,114 @@
          space available using match_parent in both dimensions. -->
     <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/BG" />
+        android:background="@drawable/BG2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/logo2"
+                    android:alpha="1"
+                    android:background="#00000000" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Good To See You"
+                    android:id="@+id/textView"
+                    android:textSize="35dp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="top|center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Welcome back, please login below"
+                    android:id="@+id/textView2"
+                    android:textColor="#AAD7F3"
+                    android:gravity="center"
+                    android:paddingTop="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:paddingTop="40dp"
+                android:weightSum="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="Username"
+                    android:ems="10"
+                    android:id="@+id/editText"
+                    android:layout_gravity="center_horizontal" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="Password"
+                    android:ems="10"
+                    android:id="@+id/editText2" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remember me?"
+                    android:id="@+id/checkBox" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="top|center"
+                android:paddingTop="15dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOGIN HERE"
+                    android:id="@+id/button"
+                    android:paddingLeft="80dp"
+                    android:paddingRight="80dp"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="25dp"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Forgot Password?"
+                    android:id="@+id/textView3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
 
     <!-- android:layout_gravity="start" tells DrawerLayout to treat
          this as a sliding drawer on the left side for left-to-right
